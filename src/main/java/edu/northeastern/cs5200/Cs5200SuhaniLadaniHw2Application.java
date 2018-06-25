@@ -82,8 +82,8 @@ public class Cs5200SuhaniLadaniHw2Application {
 		Page profile = new Page(567, "Profile", "Users can configure their personal information", date2, date3, 567878);
 //		
 //		pageDao.createPageForWebsite(456, home);
-//		pageDao.createPageForWebsite(567, about);
-//		pageDao.createPageForWebsite(345, contact);
+//		pageDao.createPageForWebsite(678, about);
+		pageDao.createPageForWebsite(345, contact);
 //		pageDao.createPageForWebsite(456, preferences);
 //		pageDao.createPageForWebsite(567, profile);
 //		
@@ -107,9 +107,9 @@ public class Cs5200SuhaniLadaniHw2Application {
 
 //		widgetDao.createWidgetForPage(123, head1);
 //		widgetDao.createWidgetForPage(234, html1);
-//		widgetDao.createWidgetForPage(345, head2);
-//		widgetDao.createWidgetForPage(345, html2);
-//		widgetDao.createWidgetForPage(345, image1);
+		widgetDao.createWidgetForPage(345, head2);
+		widgetDao.createWidgetForPage(345, html2);
+		widgetDao.createWidgetForPage(345, image1);
 //		widgetDao.createWidgetForPage(456, video1);
 		
 		
@@ -145,9 +145,11 @@ public class Cs5200SuhaniLadaniHw2Application {
 ////		System.out.println(developers);
 ////		System.out.println(websites1);
 ////		System.out.println(widgets);
+		
 //	
-		
-		
+		ImplementDeletes id1 = new ImplementDeletes();
+//		id1.removeLastUpdatedPageForWebsite(wikipedia);
+		id1.removeLastWidgetForPage(contact);
 		
 	}
 }
