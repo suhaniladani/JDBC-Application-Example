@@ -22,7 +22,7 @@ public class PriviledgeDao {
 		}
 
 
-		public int assignWebsitePriviledge(int developerId, int websiteId, int priviledgeId) {
+		public void assignWebsitePriviledge(int developerId, int websiteId, int priviledgeId) {
 			Connection connection = null;
 			PreparedStatement statement = null;
 			ResultSet results = null;
@@ -58,7 +58,6 @@ public class PriviledgeDao {
 				}
 			}
 
-			return -1;
 
 		}
 

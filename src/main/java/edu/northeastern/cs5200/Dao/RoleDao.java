@@ -21,7 +21,7 @@ public class RoleDao {
 	}
 
 
-	public int assignWebsiteRole(int developerId, int websiteId, int roleId) {
+	public void assignWebsiteRole(int developerId, int websiteId, int roleId) {
 		Connection connection = null;
 		PreparedStatement statement = null;
 		ResultSet results = null;
@@ -57,7 +57,6 @@ public class RoleDao {
 			}
 		}
 
-		return -1;
 
 	}
 

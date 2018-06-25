@@ -51,11 +51,11 @@ public class Cs5200SuhaniLadaniHw2Application {
 	
 	//	Developer bob2 = new Developer(23, "Bob2", "Marley2", "bob2", "bob2", "bob2@marley2.com", null, "5432trew2");
 		
-//		developerDao.createDeveloper(alice);
-//		developerDao.createDeveloper(bob);
-//		developerDao.createDeveloper(charlie);
-//		developerDao.createDeveloper(dan);
-//		developerDao.createDeveloper(ed);
+		developerDao.createDeveloper(alice);
+		developerDao.createDeveloper(bob);
+		developerDao.createDeveloper(charlie);
+		developerDao.createDeveloper(dan);
+		developerDao.createDeveloper(ed);
 		
 		
 		
@@ -66,12 +66,12 @@ public class Cs5200SuhaniLadaniHw2Application {
 		Website CNET = new Website(567, "CNET", "an American media website that publishes reviews, news, articles, blogs, podcasts and videos on technology and consumer electronics", date, date, 5433455);
 		Website gizmodo = new Website(678, "Gizmodo", "a design, technology, science and science fiction website that also writes articles on politics", date, date, 4322345);
 		
-//		websiteDao.createWebsiteForDeveloper(12, facebook);
-//		websiteDao.createWebsiteForDeveloper(23, twitter);
-//		websiteDao.createWebsiteForDeveloper(34, wikipedia);
-//		websiteDao.createWebsiteForDeveloper(12, CNN);
-//		websiteDao.createWebsiteForDeveloper(23, CNET);
-//		websiteDao.createWebsiteForDeveloper(34, gizmodo);
+		websiteDao.createWebsiteForDeveloper(12, facebook);
+		websiteDao.createWebsiteForDeveloper(23, twitter);
+		websiteDao.createWebsiteForDeveloper(34, wikipedia);
+		websiteDao.createWebsiteForDeveloper(12, CNN);
+		websiteDao.createWebsiteForDeveloper(23, CNET);
+		websiteDao.createWebsiteForDeveloper(34, gizmodo);
 		
 //		Website suh = new Website(98, "suh2", "suhsuh22", null, null, 3456789);
 		
@@ -81,36 +81,35 @@ public class Cs5200SuhaniLadaniHw2Application {
 		Page preferences = new Page(456, "Preferences", "Where users can configure their preferences", date2, date3, 456776);
 		Page profile = new Page(567, "Profile", "Users can configure their personal information", date2, date3, 567878);
 //		
-//		pageDao.createPageForWebsite(456, home);
-//		pageDao.createPageForWebsite(678, about);
+		pageDao.createPageForWebsite(456, home);
+		pageDao.createPageForWebsite(678, about);
 		pageDao.createPageForWebsite(345, contact);
-//		pageDao.createPageForWebsite(456, preferences);
-//		pageDao.createPageForWebsite(567, profile);
+		pageDao.createPageForWebsite(456, preferences);
+		pageDao.createPageForWebsite(567, profile);
 //		
 //		//id, name, width, height, cssClass, cssStyle, text, order, src, url, shareable, expandable, size, html, type);
-		Heading head123 = new Heading(0);
 //		Heading head1232 = new Heading(0);
+		Heading head123 = new Heading(0);
 		Html post234 = new Html(null);
 		Heading head345 = new Heading(0);
 		Html intro456 = new Html(null);
 		Image image345 = new Image("/img/567.png");
 		Youtube video456 = new Youtube("https://youtu.be/h67VX51QXiQ", false, false);
 		
-		
-		Widget head1 = new Widget(123, "head123", 0, 0, null, null, "Welcome", 0, head123, home);	
-//		Widget headxy = new Widget(123, "head1232", 0, 0, null, null, "Welcome2", 0, head1232, home);		
+//		Widget headxy = new Widget(123, "head1232", 0, 0, null, null, "Welcome2", 0, head1232, home);
+		Widget head1 = new Widget(123, "head123", 0, 0, null, null, "Welcome", 0, head123, home);			
 		Widget html1 = new Widget(234, "post234", 0, 0, null, null, "<p>Lorem</p>", 0, post234, about);
 		Widget head2 = new Widget(345, "head345", 0, 0, null, null, "Hi", 1, head345, contact);
 		Widget html2 = new Widget(456, "intro456", 0, 0, null, null, "<h1>Hi</h1>", 2, intro456, contact);
 		Widget image1 = new Widget(567, "image345", 0, 0, null, null, null, 3, image345, contact);
 		Widget video1 = new Widget(678, "video456", 0, 0, null, null, null, 0, video456, preferences);
 
-//		widgetDao.createWidgetForPage(123, head1);
-//		widgetDao.createWidgetForPage(234, html1);
+		widgetDao.createWidgetForPage(123, head1);
+		widgetDao.createWidgetForPage(234, html1);
 		widgetDao.createWidgetForPage(345, head2);
 		widgetDao.createWidgetForPage(345, html2);
 		widgetDao.createWidgetForPage(345, image1);
-//		widgetDao.createWidgetForPage(456, video1);
+		widgetDao.createWidgetForPage(456, video1);
 		
 		
 //		
@@ -149,7 +148,7 @@ public class Cs5200SuhaniLadaniHw2Application {
 //	
 		ImplementDeletes id1 = new ImplementDeletes();
 //		id1.removeLastUpdatedPageForWebsite(wikipedia);
-		id1.removeLastWidgetForPage(contact);
+//		id1.removeLastWidgetForPage(contact);
 		
 	}
 }
